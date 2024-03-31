@@ -162,4 +162,4 @@ cython_debug/
 *.tar.gz
 *.pkl
 .index
-.index_title
+.title_index
