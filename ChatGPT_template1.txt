@@ -1,0 +1,13 @@
+I am about to give you a question from the popular American quiz show Jeopardy.
+I want you to make a few changes to the question to make it more machine friendly.
+1) Convert any negated information. For example, convert "this person is not a woman" to "this person is a man".
+
+Make sure not to lose any important information in the question.
+
+Return the updated question in JSON format, like this:
+{
+    "question": "<updated_question>"
+}
+where <updated_question> is the question you generated. Do not include anything else in the output except for the JSON string.
+
+The following sentence is the question.

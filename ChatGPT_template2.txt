@@ -1,0 +1,9 @@
+I am about to give you a sequence of terms.
+I want you to rank the terms in the query by frequency in the English language, and return the 3 terms with the lowest frequency in JSON format, like this:
+{
+    "term1": "<term_with_lowest_frequency>",
+    "term2": "<term_with_second_lowest_frequency>",
+    "term3": "<term_with_third_lowest_frequency>",
+}
+
+The following sentence is the sequence of terms.
