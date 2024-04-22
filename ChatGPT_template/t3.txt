@@ -1,0 +1,6 @@
+I am about to give you a fact about some unknown object.
+Look through all terms in the fact, and if a subsequence of terms should logically be kept together, put double quotes around them.
+
+Return just the updated fact. Do not include anything else in the output.
+
+The following sentence is the fact.
