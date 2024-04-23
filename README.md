@@ -9,7 +9,7 @@ The project contains three notebooks.
 
 There are also two python files in the project, env.py and shared.py.
 - env.py defines some environment specific globals, such as the data directory path.
-- shared.py} is shared code between the two Watson attempts. It exists mostly to declutter the notebooks from having a bunch of duplicate code. It loads data and defines some functions used by both attempts.
+- shared.py is shared code between the two Watson attempts. It exists mostly to declutter the notebooks from having a bunch of duplicate code. It loads data and defines some functions used by both attempts.
 
 ## More Information
 There is more detailed information about the repository in the project report.
