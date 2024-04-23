@@ -1,14 +1,16 @@
+from env import env
+
 import pandas as pd
 import pickle
 import math
 from whoosh.analysis import Filter                                
 from nltk.stem import WordNetLemmatizer
 
-wiki_df = pd.read_pickle("./data/wiki.pkl")
-wiki_redirects_df = pd.read_pickle("./data/wiki_redirects.pkl")
-questions_df = pd.read_pickle("./data/questions.pkl")
+wiki_df = pd.read_pickle(f"{env.data_dir}/wiki.pkl")
+wiki_redirects_df = pd.read_pickle(f"{env.data_dir}/wiki_redirects.pkl")
+questions_df = pd.read_pickle(f"{env.data_dir}/questions.pkl")
 
-with open("data/term_counts.pkl", "rb") as file:
+with open(f"{env.data_dir}/term_counts.pkl", "rb") as file:
     term_counts = pickle.load(file)
 
 redirect_lookups = {}
