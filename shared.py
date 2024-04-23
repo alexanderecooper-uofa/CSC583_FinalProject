@@ -13,12 +13,12 @@ questions_df = pd.read_pickle(f"{env.data_dir}/questions.pkl")
 with open(f"{env.data_dir}/term_counts.pkl", "rb") as file:
     term_counts = pickle.load(file)
 
-redirect_lookups = {}
-for _, row in wiki_redirects_df.iterrows():
-    if row.redirect_index in redirect_lookups:
-        redirect_lookups[row.redirect_index].append(row.title)
-    else:
-        redirect_lookups[row.redirect_index] = [row.title]
+# redirect_lookups = {}
+# for _, row in wiki_redirects_df.iterrows():
+#     if row.redirect_index in redirect_lookups:
+#         redirect_lookups[row.redirect_index].append(row.title)
+#     else:
+#         redirect_lookups[row.redirect_index] = [row.title]
 
 lemmatizer = WordNetLemmatizer()
 
