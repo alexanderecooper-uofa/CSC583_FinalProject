@@ -1,0 +1,25 @@
+I am going to give you a JSON string that looks like this:
+{
+    "question": "<question>"
+    "quesses": [
+        "<quess1>",
+        "<guess2>",
+        .
+        .
+        .
+    ]
+}
+Where <question> is a fact about an unknown object, and guesses is a list of quesses for what the object could be, ranked.
+
+I want you to rerank the list of guesses and return a better ranking of guesses for the question, also in JSON format, like this:
+{
+    "reranked_guesses": [
+        "<quess1>",
+        "<guess2>",
+        .
+        .
+        .
+    ]
+}
+
+The rest of the input after this sentence is the JSON string.
