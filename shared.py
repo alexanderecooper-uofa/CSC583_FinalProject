@@ -10,7 +10,7 @@ from nltk.stem import WordNetLemmatizer
 wiki_df = None
 def get_wiki_df():
     global wiki_df
-    if not wiki_df:
+    if wiki_df is not None:
         wiki_df = pd.read_pickle(f"{env.data_dir}/wiki.pkl")
     return wiki_df
 
@@ -18,7 +18,7 @@ def get_wiki_df():
 questions_df = None
 def get_questions_df():
     global questions_df
-    if not questions_df:
+    if questions_df is not None:
         questions_df = pd.read_pickle(f"{env.data_dir}/questions.pkl")
     return questions_df
 
