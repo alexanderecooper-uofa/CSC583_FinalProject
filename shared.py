@@ -10,7 +10,7 @@ from nltk.stem import WordNetLemmatizer
 wiki_df = None
 def get_wiki_df():
     global wiki_df
-    if wiki_df is not None:
+    if wiki_df is None:
         wiki_df = pd.read_pickle(f"{env.data_dir}/wiki.pkl")
     return wiki_df
 
@@ -18,18 +18,9 @@ def get_wiki_df():
 questions_df = None
 def get_questions_df():
     global questions_df
-    if questions_df is not None:
+    if questions_df is None:
         questions_df = pd.read_pickle(f"{env.data_dir}/questions.pkl")
     return questions_df
-
-# never ended up using the redirects
-# wiki_redirects_df = pd.read_pickle(f"{env.data_dir}/wiki_redirects.pkl")\
-# redirect_lookups = {}
-# for _, row in wiki_redirects_df.iterrows():
-#     if row.redirect_index in redirect_lookups:
-#         redirect_lookups[row.redirect_index].append(row.title)
-#     else:
-#         redirect_lookups[row.redirect_index] = [row.title]
 
 # create the lemmatize filter
 lemmatizer = WordNetLemmatizer()
